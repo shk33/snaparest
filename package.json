@@ -13,5 +13,9 @@
     "browserify": "^13.1.0",
     "gulp": "^3.9.1",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
   }
 }
