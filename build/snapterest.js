@@ -20785,30 +20785,34 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 module.exports = require('./lib/React');
 
 },{"./lib/React":54}],175:[function(require,module,exports){
-
 var React = require('react');
 var ReactDOM = require('react-dom');
+var ReactClass = React.createClass({
+  displayName: 'ReactClass',
 
-var listOfItems = React.createElement(
-                   'ul',
-                   { className: 'list-of-items' },
-                   React.createElement(
-                                      'li',
-                                      { className: 'item-1' },
-                                      'Item 1'
-                   ),
-                   React.createElement(
-                                      'li',
-                                      { className: 'item-2' },
-                                      'Item 2'
-                   ),
-                   React.createElement(
-                                      'li',
-                                      { className: 'item-3' },
-                                      'Item 3'
-                   )
-);
+  getInitialState() {
+    return {
+      isHeaderHidden: false
+    };
+  },
+  handleClick() {
+    this.setState({
+      isHeaderHidden: !this.state.isHeaderHidden
+    });
+  },
+  render() {
+    var title = 'React Stateful component';
+    var headerElement = React.createElement('h1', { className: 'header', key: 'header' }, title);
 
-ReactDOM.render(listOfItems, document.getElementById('react-application'));
+    var buttonElement = React.createElement('button', { className: 'btn btn-default', onClick: this.handleClick, key: 'button' }, 'Toggle Header');
+
+    if (this.state.isHeaderHidden) return React.createElement('div', null, [buttonElement]);
+
+    return React.createElement('div', null, [buttonElement, headerElement]);
+  }
+});
+
+var reactComponentElement = React.createElement(ReactClass);
+var reactComponent = ReactDOM.render(reactComponentElement, document.getElementById('react-application'));
 
 },{"react":174,"react-dom":28}]},{},[175]);
