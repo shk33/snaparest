@@ -1,6 +1,6 @@
 var React      = require('react');
-var Stream     = require('./Stream.react');
-var Collection = require('./Collection.react');
+var Stream     = require('./Stream.react.jsx');
+var Collection = require('./Collection.react.jsx');
 
 var Application = React.createClass({
   getInitialState() {
