@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom');
 var Header   = require('./Header.react.jsx');
 var Tweet    = require('./Tweet.react.jsx');
 
-var StreamTweet.createClass({
+var StreamTweet = React.createClass({
   getInitialState() {
     console.log('[Snapterest] StreamTweet: 1. Running getInitialState()');
     return {

@@ -1,8 +1,8 @@
 var React = require('react');
 var ReactDOMServer = require('react-dom/server');
-var CollectionControls = require('./CollectionControls.react');
-var TweetList = require('./TweetList.react');
-var Header = require('./Header.react');
+var CollectionControls = require('./CollectionControls.react.jsx');
+var TweetList = require('./TweetList.react.jsx');
+var Header = require('./Header.react.jsx');
 
 var Collection = React.createClass({
 

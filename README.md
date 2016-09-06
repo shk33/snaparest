@@ -13,15 +13,24 @@ An app for learning React.js through the book [React.js Essentials](https://www.
   npm install
 ```
 
+* Install Snapkite Engine following the instructions [Here](https://github.com/Snapkite/snapkite-engine)
+
+
 * Build
 
  ``` 
    gulp
  ```
 
-* Run Server
-I use `http-server` for visiting `index.html.`
+* Running
 
+  * Start the Snapkite Engine
+  ``` 
+    cd snapkite-engine 
+    npm start
+  ```
+
+  I use `http-server` for visiting `index.html.`
   * Install `http-server` Globally
   ``` 
    npm install -g http-server
@@ -32,4 +41,4 @@ I use `http-server` for visiting `index.html.`
    http-server
   ```
 
-  * Visit `http://localhost:8080/`
+  * Visit `http://localhost:8080/build/`
