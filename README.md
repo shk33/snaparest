@@ -41,3 +41,8 @@ I use `http-server` for visiting `index.html.`
 ```
 
 * Visit `http://localhost:8080/build/`
+
+## Run tests
+``` 
+  npm test
+```
