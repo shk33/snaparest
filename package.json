@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-jest": "^15.0.0",
     "babel-preset-react": "^6.11.1",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
@@ -21,5 +22,9 @@
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "snapkite-stream-client": "^1.0.3"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(es6|jsx|js|json|node)$"
   }
 }
