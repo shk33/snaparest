@@ -1,6 +1,6 @@
 var React = require('react');
-var StreamTweet = require('./StreamTweet.react');
-var Header = require('./Header.react');
+var StreamTweet = require('./StreamTweet.react.jsx');
+var Header = require('./Header.react.jsx');
 var TweetStore = require('../stores/TweetStore');
 
 var Stream = React.createClass({
